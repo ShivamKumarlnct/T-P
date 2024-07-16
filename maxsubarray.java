@@ -7,10 +7,9 @@ public class maxsubarray {
             sum+=arr[i];
             if (sum >= max) {
                 max=sum;
-                System.out.println(sum);
             }
         }
-      
+        System.out.println(sum);
     }
     
 }
