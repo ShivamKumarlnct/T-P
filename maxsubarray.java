@@ -4,10 +4,9 @@ public class maxsubarray {
         int max=Integer.MIN_VALUE;
         int sum=0;
         for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length-1;j++){
-                sum=arr[i]+arr[j];
-            }
-            if (sum < max) {
+            sum+=arr[i];
+            if (sum >= max) {
+                max=sum;
                 System.out.println(sum);
             }
         }
