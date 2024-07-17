@@ -1,20 +1,24 @@
 package string;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class anagram {
     public static boolean anagram(String s,String t){
-        for(int i=0;i<s.length();i++){
-            for(int j=i+1;j<t.length();j++){
-                if(s.charAt(i)!=t.charAt(j)){
-                    return false;
-                }
-            }
-        }
-        return true;
+       if(s.length()!=t.length()){
+        return false;
+       }
+       char[] st = s.toCharArray();
+       char[] ts = t.toCharArray();
+       Arrays.sort(st);
+       Arrays.sort(ts);
+        return Arrays.equals(st, ts);
     }
     public static void main(String args[]){
-        String s="anagram";
-        String t="nagrama";
+        String s="shiv";
+        String t="hivs";
         anagram(s,t);
+        System.out.println(anagram(s, t));
     }
     
 }
