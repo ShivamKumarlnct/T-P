@@ -14,7 +14,6 @@ public class conversionintonum{
 
         }
         return ans;
-
     }
     public static void main(String[] args) {
         String str[]={"2","22","222","3","33","333","4","44","444","5","55","555","6","66","666","7","77","777","7777",
