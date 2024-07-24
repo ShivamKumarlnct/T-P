@@ -10,12 +10,15 @@ public class sorted {
         if(arr[i]>arr[i+1]){
             return false;
         }
-       return sorted(i, i + 1);
+        sorted(i,i+1);
+
+        return true;
 
     }
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
         sorted(arr);
+        System.out.println(sorted(arr));
     }
     
 }
