@@ -8,9 +8,9 @@ public class sorted {
         }
 
         if(arr[i]>arr[i+1]){
+            sorted(i, i + 1);
             return false;
         }
-        sorted(i,i+1);
 
         return true;
 
