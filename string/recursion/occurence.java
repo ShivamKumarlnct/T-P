@@ -14,7 +14,7 @@ public class occurence {
         int arr[]={8,3,6,9,5,10,2,5,3,11};
         int key=10;
         occurence(arr,key,0);
-        System.out.println(occurence(arr, key, 0));
+        System.out.println("index:"+occurence(arr, key, 0));
     }
     
 }
